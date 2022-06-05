@@ -1,18 +1,56 @@
 body {
-    display: flex;
-    flex-direction: column;
     font-family: Roboto;
     margin: 0;
+    display: flex;
+    flex-direction: column;
     /* padding: 0 48px; */
+    justify-content: center;
+    align-items: center;
 }
+
+.body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    width: 100%;
+  }
+
+
+.top-part{
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    justify-content: center;
+    align-items: center;
+    /* width: 1000px;
+    flex: auto; */
+  }
+  
 
 .header-line {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #1f2937;
+    /* padding: 16px 0 144px; */
+    height: 72px;
+    width: 1000px;
+    /* width: 1000px; */
 }
+
+/* .top-part:before {
+    content:"";
+    background-color:#1f2937;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index: -1;
+} */
 
 .header-line .logo {
     font-size: 24px;
@@ -30,12 +68,15 @@ body {
 
 
 .front-container {
-    margin-top: 64px;
+    /* padding-top: 64px solid #1f2937; */
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #1f2937;
+    margin: 0;
+    width: 1000px;
+    padding-bottom: 64px;
 }
 
 .front-container .content {
@@ -50,6 +91,7 @@ body {
     font-weight:bolder;
     color: #f9faf8;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 .front-container .text {
@@ -113,6 +155,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #e5e7eb;
+    padding: 48px 0;
 }
 
 .quote p {
@@ -128,6 +171,11 @@ body {
     font-size: 20px;
 }
 
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
 .contact {
     background-color: #3882f6;
     border-radius: 10px;
@@ -135,6 +183,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 168px;
+    padding: 32px 0;
+    width: 1000px;
 }
 
 .contact .content h1{
@@ -161,6 +212,7 @@ body {
 }
 
 .footer {
+    height: 96px;
     font-size: 18px;
     color: #e5e7eb;
     background-color: #1f2937;
